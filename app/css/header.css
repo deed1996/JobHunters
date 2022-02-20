@@ -1,0 +1,126 @@
+/* Logo */
+.header__logo {
+  background-color: var(--white);
+  padding: 2.18125rem 0.625rem 0.625rem 0.625rem;
+  margin-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
+img.header__logo {
+  width: 9.625rem;
+  height: 1.18125rem;
+}
+
+/* Burger Menu */
+#button_burger {
+  z-index: 2;
+}
+
+#button_burger span {
+  display: block;
+  width: 2rem;
+  height: 0.1875rem;
+  background-color: var(--dodgerblue);
+  margin-bottom: 0.1875rem;
+  transform-origin: 7px 2px;
+  transition: all 300ms ease-in-out;
+}
+
+.header.open span:first-child {
+  transform: rotate(45deg);
+}
+
+.header.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open span:last-child {
+  transform: rotate(-45deg);
+}
+
+/* Overlay */
+.header.open .overlay {
+  background-color: var(--midnightblue);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Header Menu */
+.header__menu {
+  color: var(--white);
+  font-size: var(--font-med);
+  font-weight: bold;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  counter-reset: li;
+  margin-top: 0px;
+  position: absolute;
+  top: 1%;
+  z-index: 1;
+}
+
+.header__menu a {
+  display: block;
+  text-align: left;
+  font-size: var(--font-xlarge);
+  line-height: 4.5rem;
+}
+
+.content-heading {
+  color: var(--white);
+  font-size: var(--font-med);
+  margin-bottom: 5.3125rem;
+  margin-top: 0;
+}
+
+li {
+  font-weight: bold;
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: center;
+}
+
+li:before {
+  content: '';
+  counter-increment: li;
+  content: counter(li, decimal-leading-zero);
+  color: var(--white);
+  margin-right: 1.25rem;
+
+  font-size: var(--font-xsmall);
+}
+
+/* Menu links hover */
+.text-container {
+  position: relative;
+}
+
+@media(hover: hover) and (pointer: fine) {
+  li:hover a {
+    opacity: 0.2;
+    top: 15px;
+  }
+
+  .text-overlay:hover:after {
+    content: attr(data-hover);
+    opacity: 1;
+    color: var(--summersky);
+    font-size: 15px;
+    font-weight: lighter;
+    transform: translate(5%, -200%);
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header__menu a {
+    font-size: var(--font-large);
+    line-height: 2.5rem;
+  }
+}

@@ -1,0 +1,20 @@
+/** Colours */
+:root {
+  --white: #ffffff;
+  --ghostwhite: #F7F7F9;
+  --seashell: #FDFAF7;
+  --summersky: #45B0FF;
+  --dodgerblue: #0868FF;
+  --navyblue: #0072C6;
+  --midnightblue: #0E0B58;
+  --nightrider: #333333;
+
+
+  --font-xxlarge: 5.5em; /*88*/
+  --font-xlarge: 3.5rem; /*56*/
+  --font-large: 2.5rem; /*40*/
+  --font-med:1.875rem; /*30*/
+  --font-small:1.125rem; /*18*/
+  --font-xsmall:1.0625rem; /*17*/
+  --font-xxsmall:1rem; /*16*/
+}

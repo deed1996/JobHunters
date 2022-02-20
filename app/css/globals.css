@@ -1,0 +1,53 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Menu links */
+a, a:visited, a:hover {
+  text-decoration: none;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+/* Flexbox styles */
+nav {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 95%;
+}
+
+ol {
+  padding-left: 0px;
+}
+
+.container {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 5.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
