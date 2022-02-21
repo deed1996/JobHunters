@@ -99,6 +99,7 @@ li:before {
 /* Menu links hover */
 .text-container {
   position: relative;
+  padding-right: 1rem;
 }
 
 @media(hover: hover) and (pointer: fine) {
@@ -111,7 +112,7 @@ li:before {
     content: attr(data-hover);
     opacity: 1;
     color: var(--summersky);
-    font-size: 15px;
+    font-size:  0.9375rem;
     font-weight: lighter;
     transform: translate(5%, -200%);
     position: absolute;
