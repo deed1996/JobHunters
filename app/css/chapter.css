@@ -1,10 +1,7 @@
+/*  Both chapters */
 .container {
   padding: 3rem;
   width: 100%
-}
-
-.chapter_2 {
-  background-color: #FDFAF7;
 }
 
 .grid_container {
@@ -26,10 +23,6 @@
 .grid_container h2, h3, h4 {
   color: var(--midnightblue);
   font-weight: bolder;
-}
-
-.grid_container h3:not(:first-child) {
-  padding-top: 1.5rem;
 }
 
 .grid_height {
@@ -69,6 +62,7 @@ article a {
   color: var(--midnightblue);
 }
 
+/* Chapter 1 */
 .item2_image {
   width: 19rem;
   padding-right: 2rem;
@@ -98,6 +92,47 @@ article a {
   padding: 1.25rem;
 }
 
+/* Chapter 2 */
+.chapter_2 {
+  background-color: #FDFAF7;
+}
+
+.stages a {
+  color: var(--summersky);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.flex_box_container_chap_2 {
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
+.flex_item_chap_2 {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: rgba(0, 114, 198, 0.1);
+  position: relative;
+}
+
+.interview_image_box img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.sticky_notes {
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--navyblue);
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.square_blue_overlay_2 {
+  transform: rotate(19deg) translate(0%, 85%) scale(1.5)
+}
+
 @media only screen and (max-width: 600px) {
   .container {
     padding: 0;
@@ -118,5 +153,16 @@ article a {
 
   .square_blue_overlay {
     transform: rotate(19deg) translate(10%, -95%) scale(1.2);
+  }
+
+  .interview_image_box {
+    display: block;
+    height: 15rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .interview_image_box {
+    display: none;
   }
 }
