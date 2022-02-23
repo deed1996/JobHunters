@@ -23,11 +23,16 @@
 .grid_container h2, h3, h4 {
   color: var(--midnightblue);
   font-weight: bolder;
+  text-transform: uppercase;
 }
 
+.grid_container h2 {
+  font-size: 4.5re
+}
+/*
 .grid_height {
   height: 35rem;
-}
+} */
 
 .text_divider {
   display: flex;
@@ -53,9 +58,13 @@
   width: 12rem;
   height: 12rem;
   background: var(--summersky);
-  transform: rotate(19deg) translate(0%, -85%);
   opacity: 0.6;
   margin-right: -7.5rem;
+  mix-blend-mode: hard-light;
+}
+
+.overlay_1 {
+  transform: rotate(19deg) translate(0%, -85%);
 }
 
 article a {
@@ -85,7 +94,7 @@ article a {
 .icon {
   position: absolute;
   left: 1rem;
-  top: -2rem;
+  top: -3rem;
 }
 
 .small_grid_container {
@@ -135,24 +144,24 @@ article a {
 
 @media only screen and (max-width: 600px) {
   .container {
-    padding: 0;
+    padding: 1rem;
   }
 
   .grid_container, .flex_box_container {
     display: contents;
   }
 
-  .item2_image {
+  /* .item2_image {
     width: -webkit-fill-available;
-  }
+  } */
 
   .flex_item {
     width: auto;
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 
-  .square_blue_overlay {
-    transform: rotate(19deg) translate(10%, -95%) scale(1.2);
+  .overlay_1 {
+    transform: rotate(19deg) translate(50%, -135%) scale(2);
   }
 
   .interview_image_box {

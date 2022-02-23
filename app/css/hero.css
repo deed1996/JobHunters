@@ -1,13 +1,11 @@
 .hero_image {
-  background-image: url("../../images/womain-working-on-bed-with-dog.jpg");
+  background-image: url(../../images/womain-working-on-bed-with-dog.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 46rem;
-  overflow: hidden;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  overflow: hidden;
 }
 
 .hero_image::before {
@@ -29,7 +27,7 @@
 }
 
 .hero_text p {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .overlay_container {
@@ -37,7 +35,7 @@
 }
 
 .blue_overlay {
-  width: 38rem;
+  width: 50rem;
   height: 70rem;
   background: var(--summersky);
   transform: rotate(19deg);
@@ -46,7 +44,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-
   .blue_overlay {
     margin-left: 9.375rem;
     margin-right: -9.375rem;
