@@ -17,9 +17,10 @@
   padding: 1.25rem;
 }
 
-.grid_container a {
+.grid_container a, .small_grid_container a {
   color: var(--navyblue);
   text-transform: capitalize;
+  text-decoration: underline;
 }
 
 .grid_container h2, h3, h4 {
