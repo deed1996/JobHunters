@@ -20,7 +20,6 @@
 .grid_container a {
   color: var(--navyblue);
   text-transform: capitalize;
-  text-decoration: underline;
 }
 
 .grid_container h2, h3, h4 {
