@@ -3,13 +3,13 @@
   width: 100%
 }
 
-.chapter_2{
+.chapter_2 {
   background-color: #FDFAF7;
 }
 
 .grid_container {
   display: grid;
-  grid-template-columns: 25rem 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 .grid_container div {
@@ -92,6 +92,10 @@ article a {
   position: absolute;
   left: 1rem;
   top: -2rem;
+}
+
+.small_grid_container {
+  padding: 1.25rem;
 }
 
 @media only screen and (max-width: 600px) {
