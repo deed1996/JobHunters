@@ -3,10 +3,12 @@ html {
 }
 
 body {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   line-height: 1.5em;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Menu links */
@@ -21,6 +23,7 @@ nav {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
+
 .flex {
   display: flex;
   align-items: center;
@@ -30,15 +33,7 @@ nav {
 }
 
 ol {
-  padding-left: 0px;
-}
-
-.container {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-
+  padding-left: 0;
 }
 
 h1 {
@@ -46,10 +41,16 @@ h1 {
   font-size: 5.5rem;
 }
 
-h2 {
-  margin-right: 4.875rem;
+h2, h3 {
   margin-top: 0;
+  text-transform: uppercase;
 }
+
+strong {
+  color: var(--midnightblue);
+    font-weight: bolder;
+}
+
 
 @media only screen and (max-width: 600px) {
   h1 {

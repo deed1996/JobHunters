@@ -46,9 +46,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .hero_text {
-    top: 25%;
-  }
 
   .blue_overlay {
     margin-left: 9.375rem;

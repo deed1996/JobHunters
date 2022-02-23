@@ -1,19 +1,19 @@
 .open_menu_section {
   background-color: var(--midnightblue);
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  min-height: 45rem;
+  padding: 5rem 3rem 35rem 3rem;
 }
 
 .open_menu_text {
   color: var(--white);
 }
 
+.open_menu_text h2 {
+  margin-right: 4.875rem;
+}
+
 .open_menu {
   color: var(--white);
-  font-size: var(--font-xxlarge);
+  font-size: var(--font-xlarge);
   font-weight: bold;
   counter-reset: li;
   position: absolute;
@@ -41,9 +41,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .header__menu a {
-    font-size: var(--font-large);
-    line-height: 2.5rem;
+  .open_menu_section {
+    padding: 5rem 3rem 28rem 3rem;
   }
 
   .open_menu {

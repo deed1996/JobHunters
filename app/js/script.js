@@ -22,6 +22,7 @@ buttonBurger.addEventListener('click', function() {
 
 });
 
+
 var menuBlock = '<menu class="open_menu">' +
                 '<div class="text-container">' +
                   '<ol>' +
@@ -32,12 +33,12 @@ var menuBlock = '<menu class="open_menu">' +
                   '</li>' +
                   '<li>' +
                     '<div class="text-open-menu-overlay" data-hover="Learn how to ace your next virtual interview">' +
-                      '<a href="#remote_work" > ace a virtual interview </a>' +
+                      '<a href="#virtual_interview" > ace a virtual interview </a>' +
                     '</div>' +
                   '</li>' +
                   '<li>' +
                     '<div class="text-open-menu-overlay" data-hover="Further reading and help available" >' +
-                      '<a href="#remote_work"> Useful links </a>' +
+                      '<a href="#useful_links"> Useful links </a>' +
                     '</div>' +
                   '</li>' +
                 '</ol>' +
