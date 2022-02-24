@@ -29,11 +29,11 @@
 .grid_container h2 {
   font-size: 4.5re
 }
+
 /*
 .grid_height {
   height: 35rem;
 } */
-
 .text_divider {
   display: flex;
   align-items: center;
@@ -130,17 +130,19 @@ article a {
   max-width: 100%;
 }
 
-.sticky_notes {
+.sticky_notes p {
   text-align: left;
   text-transform: uppercase;
   color: var(--navyblue);
-  font-size: 2.5rem;
+  font-size: 3rem;
+  line-height: 3rem;
   font-weight: bold;
-  line-height: 2rem;
 }
 
-.square_blue_overlay_2 {
-  transform: rotate(19deg) translate(0%, 85%) scale(1.5)
+.overlay_2 {
+  transform: rotate(19deg) translate(-80%, -130%) scale(2);
+  opacity: 0.9;
+  mix-blend-mode: hard-light;
 }
 
 @media only screen and (max-width: 600px) {
@@ -155,7 +157,6 @@ article a {
   /* .item2_image {
     width: -webkit-fill-available;
   } */
-
   .flex_item {
     width: auto;
     margin-top: 5rem;
