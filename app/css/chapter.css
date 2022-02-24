@@ -7,9 +7,6 @@
 .grid_container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-}
-
-.grid_container div {
   text-align: left;
   padding: 1.25rem;
 }
@@ -30,10 +27,6 @@
   font-size: 4.5rem;
 }
 
-/*
-.grid_height {
-  height: 35rem;
-} */
 .text_divider {
   display: flex;
   align-items: center;
@@ -75,7 +68,7 @@ article a {
 /* Chapter 1 */
 .item2_image {
   width: 100%;
-  padding-right: 2rem;
+  padding-right: 5rem;
 }
 
 .flex_box_container {
@@ -107,7 +100,7 @@ article a {
   background-color: #FDFAF7;
 }
 
-.stages a {
+.stage, .stages a {
   color: var(--summersky);
   font-weight: bold;
   text-decoration: none;
@@ -128,6 +121,8 @@ article a {
 .interview_image_box img {
   max-height: 100%;
   max-width: 100%;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .sticky_notes p {
@@ -145,12 +140,22 @@ article a {
   mix-blend-mode: hard-light;
 }
 
-@media only screen and (max-width: 600px) {
-  .container {
-    padding: 1rem;
-  }
+.virtual_interview_grid {
+  display: grid;
+  grid-template-columns: repeat(3,33%);  /* 3 columns */
+  grid-template-rows: repeat(2,auto); /* 3 rows  */
+}
 
-  .grid_container, .flex_box_container {
+.virtual_interview_grid_item{
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgba(0, 114, 198, 0.1);
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .grid_container, .flex_box_container, .grid_container_stage_2{
     display: contents;
   }
 
@@ -160,10 +165,22 @@ article a {
   .flex_item {
     width: auto;
     margin-top: 5rem;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 
   .overlay_1 {
     transform: rotate(19deg) translate(50%, -135%) scale(2);
+  }
+
+  .item2_image, .sticky_notes {
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    padding-right: 0;
+  }
+
+  .overlay_2 {
+    margin-bottom: -5rem;
   }
 }
 

@@ -3,7 +3,7 @@ const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
 const fadeElems = document.querySelectorAll('.has-fade');
 
-const anchor = document.querySelector('#anchor a');
+const anchor = document.querySelector('#anchor');
 
 buttonBurger.addEventListener('click', function() {
   console.log('open burger');
@@ -29,19 +29,7 @@ anchor.addEventListener('click', function() {
     element.classList.remove('fade-in');
     element.classList.add('fade-out');
   });
-  // overlay.classList.remove('overlay');
 });
-
-// anchor.on('click', funtion() {
-//   overlay.hide();
-//   header.classList.remove('open');
-// });
-//
-// document.querySelector('#anchor a').forEach(function(nav) {
-//   if (event.target.closest(".box"))
-//   nav.classList.add('hide_overlay');
-// });
-//
 
 
 var menuBlock = '<menu class="open_menu">' +
