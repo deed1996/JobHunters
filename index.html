@@ -10,14 +10,16 @@
   <title>Job Hunters</title>
 </head>
 
-<body>
+<body id="body">
   <!-- Header -->
   <header class="header">
     <div class="overlay has-fade"></div>
 
     <nav class="flex">
       <a href="#" class="header__logo">
-        <img src="images/jobhunters-logo.svg" alt="Job Hunters Logo">
+        <picture>
+          <img src="images/jobhunters-logo.svg" alt="Job Hunters Logo">
+        </picture>
       </a>
 
       <a id="button_burger" href="#">
@@ -27,28 +29,28 @@
       </a>
     </nav>
 
-    <menu class="header__menu has-fade">
+    <nav class="header__menu has-fade">
       <h2 class="content-heading">CONTENTS</h2>
-      <div class="text-container">
+      <div class="text-container has-fade" id="anchor">
         <ol>
           <li>
             <div class="text-overlay" data-hover="Are you ready to work remotely?">
-              <a href="remote_work">remote work has changed job hunting</a>
+              <a href="#remote_work">remote work has changed job hunting</a>
             </div>
           </li>
           <li>
             <div class="text-overlay" data-hover="Learn how to ace your next virtual interview">
-              <a href="virtual_interview">ace a virtual interview</a>
+              <a href="#virtual_interview">ace a virtual interview</a>
             </div>
           </li>
           <li>
             <div class="text-overlay" data-hover="Further reading and help available">
-              <a href="useful_links">Useful links</a>
+              <a href="#useful_links">Useful links</a>
             </div>
           </li>
         </ol>
       </div>
-    </menu>
+    </nav>
   </header>
 
   <!-- Hero -->
@@ -82,7 +84,7 @@
     <!-- How remote work has changed job hunting -->
     <article>
       <div class="grid_container">
-        <div>
+        <div id="remote_work">
           <span class="text_divider">Chapter 01</span>
           <h2>How remote work has changed job hunting</h2>
         </div>
@@ -145,18 +147,24 @@
 
       <div class="flex_box_container">
         <div class="flex_item">
-          <img class="icon" src="images/diamond-icon.svg" alt="Diamond icon">
+          <picture>
+            <img class="icon" src="images/diamond-icon.svg" alt="Diamond icon">
+          </picture>
           <h4>Do you feel confident working alone?</h4>
           <p>Especially if you’re early on in your career or starting an unfamiliar role, think carefully about whether you have all the skills you need. Remote support will be enough for some people, while others might prefer to learn in the office
             where there’s plenty of help to hand.</p>
         </div>
         <div class="flex_item">
-          <img class="icon" src="images/workspace-icon.svg" alt="Workspace icon">
+          <picture>
+            <img class="icon" src="images/workspace-icon.svg" alt="Workspace icon">
+          </picture>
           <h4>Do you have the right workspace?</h4>
           <p>That means enough space for your desk, a peaceful place to concentrate, and a good internet connection, as a minimum. The ideal workspace will look different for everyone.</p>
         </div>
         <div class="flex_item">
-          <img class="icon" src="images/lamp-icon.svg" alt="Lamp icon">
+          <picture>
+            <img class="icon" src="images/lamp-icon.svg" alt="Lamp icon">
+          </picture>
           <h4>Do you have the right temperament?</h4>
           <p>Some people love the quiet and concentration of working at home; others miss the buzz and banter of the office. Think about how you like to spend your time. Would you be happy working alone all the time, want the occasional day in the
             office or a coworking space, or prefer to be in the office full time?</p>
@@ -245,11 +253,14 @@
           <p class="stages"><a href="#">STAGE 02:</a></p>
           <h3>During a remote interview</h3>
 
-          <p>Even though the location and the set-up are different, a virtual interview is a lot like an in-person interview. You still need to show up on time, answer questions and make a good impression.<br/>
-          <p>But there are some extra tips for remote interviews, too. Because you’re speaking over an internet connection, it can be harder to hear clearly. Try to speak up and, if you’re a fast talker, maybe even slow down a little so that the interviewer has time to hear and process your answers. Avoid covering your mouth with your hand, which makes it harder to read your expression and hear your words.</p>
-          <p>Just like in an in-person interview, good eye contact, posture, and a friendly smile can go a long way. You can create the impression of keeping eye contact by positioning your computer with the camera at eye level. Focus on the screen and try not to get distracted.</p>
+          <p>Even though the location and the set-up are different, a virtual interview is a lot like an in-person interview. You still need to show up on time, answer questions and make a good impression.<br />
+          <p>But there are some extra tips for remote interviews, too. Because you’re speaking over an internet connection, it can be harder to hear clearly. Try to speak up and, if you’re a fast talker, maybe even slow down a little so that the
+            interviewer has time to hear and process your answers. Avoid covering your mouth with your hand, which makes it harder to read your expression and hear your words.</p>
+          <p>Just like in an in-person interview, good eye contact, posture, and a friendly smile can go a long way. You can create the impression of keeping eye contact by positioning your computer with the camera at eye level. Focus on the screen
+            and try not to get distracted.</p>
           <p>A recent survey from VisualCV found that <strong>80% of unsuccessful candidates in a video interview seemed distracted</strong>. Keeping your gaze on the screen is a way to show interviewers that you are interested and engaged.</p>
-          <p>According to recruiters, another big problem is candidates who seem to be reading from notes. It’s important to research and prepare, but avoid reading out answers or giving a speech that you’ve rehearsed. If you want to have notes, just write short reminders of key points rather than full sentences.</p>
+          <p>According to recruiters, another big problem is candidates who seem to be reading from notes. It’s important to research and prepare, but avoid reading out answers or giving a speech that you’ve rehearsed. If you want to have notes, just
+            write short reminders of key points rather than full sentences.</p>
           <p>Finally, you want to avoid any red flags in the interview. Recruiters say that they avoid candidates who:</p>
         </div>
       </div>
@@ -282,7 +293,7 @@
 
 
 
-
+<p><a href="#body" id="access_top" class="access_aid">Skip to top</a></p>
   <script src="app/js/script.js"></script>
 </body>
 

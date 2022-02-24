@@ -56,6 +56,10 @@ p {
   font-size: 1.5rem;
 }
 
+.hide_overlay {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 6rem;

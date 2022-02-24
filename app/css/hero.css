@@ -38,7 +38,7 @@
   width: 60rem;
   height: 70rem;
   background: var(--summersky);
-  transform: rotate(45deg) translate(0px, -100px);
+  transform: rotate(45deg);
   opacity: 0.6;
   margin-right: -20rem;
   mix-blend-mode: hard-light;
