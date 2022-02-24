@@ -99,6 +99,8 @@ li:before {
 .text-container {
   position: relative;
   padding-right: 1rem;
+  font-size: 7rem;
+  line-height: 7rem;
 }
 
 @media(hover: hover) and (pointer: fine) {
@@ -111,9 +113,9 @@ li:before {
     content: attr(data-hover);
     opacity: 1;
     color: var(--summersky);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: lighter;
-    transform: translate(5%, -200%);
+    transform: translate(5%, -100%);
     position: absolute;
   }
 }

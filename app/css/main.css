@@ -1,6 +1,6 @@
 .open_menu_section {
   background-color: var(--midnightblue);
-  padding: 5rem 3rem 35rem 3rem;
+  padding: 10rem 3rem 10rem 3rem;
 }
 
 .open_menu_text {
@@ -13,10 +13,10 @@
 
 .open_menu {
   color: var(--white);
-  font-size: var(--font-xlarge);
+  font-size: 4.5rem;
   font-weight: bold;
   counter-reset: li;
-  position: absolute;
+  position: relative;
   left: 0;
   line-height: 5rem;
   padding-left: 3rem;
@@ -26,12 +26,12 @@
   content: attr(data-hover);
   opacity: 1;
   color: var(--summersky);
-  font-size: 0.9375rem;
+  font-size: 1.5rem;
   font-weight: lighter;
-  transform: translate(-100%, 20%);
   position: absolute;
   height: auto;
-  width: 20rem;
+  width: 100%;
+  justify-content: flex-start;
 }
 
 @media only screen and (min-width: 600px) {
@@ -42,7 +42,7 @@
 
 @media only screen and (max-width: 600px) {
   .open_menu_section {
-    padding: 5rem 3rem 30rem 3rem;
+    padding: 5rem 3rem 5rem 3rem;
   }
 
   .open_menu {

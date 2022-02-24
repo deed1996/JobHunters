@@ -27,17 +27,17 @@ var menuBlock = '<menu class="open_menu">' +
                 '<div class="text-container">' +
                   '<ol>' +
                   '<li>' +
-                    '<div class="text-open-menu-overlay" data-hover="Are you ready to work remotely?" >' +
-                      '<a href="#remote_work" > remote work has changed job hunting </a>' +
+                    '<div class="text-overlay">' +
+                      '<a href="#remote_work"> remote work has changed job hunting </a>' +
                     '</div>' +
                   '</li>' +
                   '<li>' +
-                    '<div class="text-open-menu-overlay" data-hover="Learn how to ace your next virtual interview">' +
+                    '<div class="text-overlay">' +
                       '<a href="#virtual_interview" > ace a virtual interview </a>' +
                     '</div>' +
                   '</li>' +
                   '<li>' +
-                    '<div class="text-open-menu-overlay" data-hover="Further reading and help available" >' +
+                    '<div class="text-overlay" >' +
                       '<a href="#useful_links"> Useful links </a>' +
                     '</div>' +
                   '</li>' +

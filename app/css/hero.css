@@ -35,17 +35,27 @@
 }
 
 .blue_overlay {
-  width: 50rem;
+  width: 60rem;
   height: 70rem;
   background: var(--summersky);
-  transform: rotate(19deg);
+  transform: rotate(45deg) translate(0px, -100px);
   opacity: 0.6;
-  margin-right: -7.5rem;
+  margin-right: -20rem;
+  mix-blend-mode: hard-light;
 }
 
 @media only screen and (max-width: 600px) {
   .blue_overlay {
-    margin-left: 9.375rem;
-    margin-right: -9.375rem;
+    transform: rotate(45deg) translate(50px, -100px);
+  }
+
+  .hero_text {
+    top: 30%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hero_text {
+    top: 20%;
   }
 }
