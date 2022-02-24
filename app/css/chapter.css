@@ -41,6 +41,7 @@
   padding-bottom: 0.5rem;
   color: var(--summersky);
   font-size: 0.8rem;
+  text-transform: uppercase;
 }
 
 .text_divider::before {
@@ -64,7 +65,7 @@
 }
 
 .overlay_1 {
-  transform: rotate(19deg) translate(0%, -85%);
+  transform: rotate(19deg) translate(80%, -145%) scale(2);
 }
 
 article a {
@@ -73,7 +74,7 @@ article a {
 
 /* Chapter 1 */
 .item2_image {
-  width: 19rem;
+  width: 100%;
   padding-right: 2rem;
 }
 
@@ -163,14 +164,9 @@ article a {
   .overlay_1 {
     transform: rotate(19deg) translate(50%, -135%) scale(2);
   }
-
-  .interview_image_box {
-    display: block;
-    height: 15rem;
-  }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 600px) {
   .interview_image_box {
     display: none;
   }

@@ -125,4 +125,8 @@ li:before {
     font-size: var(--font-xlarge);
     line-height: 3rem;
   }
+
+  .text-container {
+    line-height: 1rem;
+  }
 }
