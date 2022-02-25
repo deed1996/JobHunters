@@ -3,10 +3,10 @@ const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
 const fadeElems = document.querySelectorAll('.has-fade');
 
-const anchor = document.querySelector('#anchor');
+const anchor = document.querySelector('.text-container');
+const scroll = document.querySelectorAll('a[href^="#"]');
 
 buttonBurger.addEventListener('click', function() {
-  console.log('open burger');
 
   if (header.classList.contains('open')) { //close burger menu
     header.classList.remove('open');
@@ -23,6 +23,7 @@ buttonBurger.addEventListener('click', function() {
   }
 });
 
+
 anchor.addEventListener('click', function() {
   header.classList.remove('open');
   fadeElems.forEach(function(element) {
@@ -32,27 +33,36 @@ anchor.addEventListener('click', function() {
 });
 
 
-var menuBlock = '<menu class="open_menu">' +
-                '<div class="text-container">' +
-                  '<ol>' +
-                  '<li>' +
-                    '<div class="text-overlay">' +
-                      '<a href="#remote_work"> remote work has changed job hunting </a>' +
-                    '</div>' +
-                  '</li>' +
-                  '<li>' +
-                    '<div class="text-overlay">' +
-                      '<a href="#virtual_interview" > ace a virtual interview </a>' +
-                    '</div>' +
-                  '</li>' +
-                  '<li>' +
-                    '<div class="text-overlay" >' +
-                      '<a href="#useful_links"> Useful links </a>' +
-                    '</div>' +
-                  '</li>' +
-                '</ol>' +
-                '</div>' +
-                '</menu>';
+scroll.forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
 
-// Inserting the code block to wrapper element
-document.getElementById("menuWrapper").innerHTML = menuBlock;
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+
+  const slider = tns({
+    container: '.my-slider',
+    loop: true,
+    gutter: 20,
+    items: 1,
+    slideBy: 'page',
+    nav: false,
+    autoplayButtonOutput: false,
+    mouseDrag: true,
+    lazyload: true,
+    controlsContainer: "#customize-controls",
+    responsive: {
+        640: {
+            items: 2,
+        },
+
+        768: {
+            items: 4,
+        }
+    }
+
+  });

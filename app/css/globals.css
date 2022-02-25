@@ -37,6 +37,10 @@ ol {
   padding-left: 0;
 }
 
+ul {
+  padding-left: 2rem;
+}
+
 h1 {
   text-transform: uppercase;
   font-size: 9rem;
@@ -56,12 +60,14 @@ p {
   font-size: 1.5rem;
 }
 
-.hide_overlay {
-  display: none;
-}
-
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 6rem;
   }
+}
+
+footer {
+  background-color: var(--midnightblue);
+  justify-content: space-around;
+  height: 6rem;
 }

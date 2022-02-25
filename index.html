@@ -4,9 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="app/css/styles.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js"></script>
   <title>Job Hunters</title>
 </head>
 
@@ -74,13 +81,32 @@
         starting a new job online.
       </p>
     </div>
-    <div id="menuWrapper"></div>
+
+    <menu class="open_menu">
+      <div class="text-container">
+        <ol>
+          <li>
+            <div class="text-overlay">
+              <a href="#remote_work"> remote work has changed job hunting </a>
+            </div>
+          </li>
+          <li>
+            <div class="text-overlay">
+              <a href="#virtual_interview"> ace a virtual interview </a>
+            </div>
+          </li>
+          <li>
+            <div class="text-overlay">
+              <a href="#useful_links"> Useful links </a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </menu>
   </section>
 
   <!--Chapter 1: How remote work has changed job hunting -->
   <section class="container">
-
-    <!-- How remote work has changed job hunting -->
     <article>
       <div class="grid_container">
         <div id="remote_work">
@@ -182,7 +208,6 @@
 
   <!--Chapter 2: How to ace a virtual interview -->
   <section class="container chapter_2 ">
-    <!-- How remote work has changed job hunting -->
     <article>
       <div class="grid_container">
         <div>
@@ -336,9 +361,72 @@
     </article>
   </section>
 
+  <!--Chapter 3: Useful links -->
+  <section class="container">
+    <article>
+      <div class="grid_container">
+        <div id="useful_links">
+          <span class="text_divider">Chapter 03</span>
+          <h2>Useful Links</h2>
+        </div>
+      </div>
 
-  <a href="#body" id="access_top" class="access_aid">Skip to top</a>
+      <div class="slider-container">
+        <div class="my-slider">
+          <div class="slider-item">
+            <div class="card">
+              <img src="images/getting-the-most-from-remote-working.jpg" alt="">
+              <h3 class="card-title">Getting the most from remote working</h3>
+              <p>EXTERNAL</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <div class="card">
+              <img src="images/the-ultimate-guide-to-working-from-home.jpg" alt="">
+              <h3 class="card-title">The ultimate guide to working from home</h3>
+              <p>EXTERNAL</p>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <div class="card">
+              <img src="images/how-to-find-a-remote-job.jpg" alt="">
+              <h3 class="card-title">How to find (and land!) a remote job that’s right for you</h3>
+              <p>EXTERNAL</p>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="card">
+              <img src="images/how-how-to-prepare-for-a-remote-interview.jpg" alt="">
+              <h3 class="card-title">How to prepare for a video interview</h3>
+              <p>EXTERNAL</p>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="card">
+              <img src="images/setting-yourself-up-for-success.jpg" alt="">
+              <h3 class="card-title">Remote Working: Setting yourself and your teams up for success</h3>
+              <p>EXTERNAL</p>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="card">
+              <img src="images/protect-home-workers.jpg" alt="">
+              <h3 class="card-title">Protect home workers</h3>
+              <p>EXTERNAL</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
   <script src="app/js/script.js"></script>
 </body>
+<footer>
+  <a href="#body" id="access_top">Skip to top</a>
+
+</footer>
 
 </html>

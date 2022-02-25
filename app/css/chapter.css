@@ -1,6 +1,7 @@
 /*  Both chapters */
 .container {
-  padding: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   width: 100%
 }
 
@@ -24,7 +25,6 @@
 .grid_container h2, h3, h4 {
   color: var(--midnightblue);
   font-weight: bolder;
-  text-transform: uppercase;
 }
 
 .grid_container h2 {
@@ -65,15 +65,28 @@ article a {
 }
 
 .overlay_1 {
+  -webkit-transform: rotate(-19deg) translate(100%, -145%) scale(2);
+  -moz-transform: rotate(-19deg) translate(100%, -145%) scale(2);
+  -ms-transform: rotate(-19deg) translate(100%, -145%) scale(2);
+  -o-transform: rotate(-19deg) translate(100%, -145%) scale(2);
   transform: rotate(19deg) translate(100%, -145%) scale(2);
+
 }
 
 .overlay_2{
+  -webkit-transform: rotate(19deg) translate(-80%, -130%) scale(2);
+  -moz-transform: rotate(19deg) translate(-80%, -130%) scale(2);
+  -ms-transform: rotate(19deg) translate(-80%, -130%) scale(2);
+  -o-transform: rotate(19deg) translate(-80%, -130%) scale(2);
   transform: rotate(19deg) translate(-80%, -130%) scale(2);
   opacity: 0.9;
 }
 
 .overlay_3 {
+  -webkit-transform: rotate(19deg) translate(0%, -160%) scale(2);
+  -moz-transform: rotate(19deg) translate(0%, -160%) scale(2);
+  -ms-transform: rotate(19deg) translate(0%, -160%) scale(2);
+  -o-transform: rotate(19deg) translate(0%, -160%) scale(2);
   transform: rotate(19deg) translate(0%, -160%) scale(2);
   opacity: 0.9;
 }
@@ -189,6 +202,10 @@ ul li::marker {
   }
 
   .overlay_1 {
+    -webkit-transform: rotate(19deg) translate(50%, -135%) scale(2);
+    -moz-transform: rotate(19deg) translate(50%, -135%) scale(2);
+    -ms-transform: rotate(19deg) translate(50%, -135%) scale(2);
+    -o-transform: rotate(19deg) translate(50%, -135%) scale(2);
     transform: rotate(19deg) translate(50%, -135%) scale(2);
   }
 
@@ -197,6 +214,10 @@ ul li::marker {
   }
 
   .overlay_3 {
+    -webkit-transform: rotate(19deg) translate(-20%, -110%) scale(2);
+    -moz-transform: rotate(19deg) translate(-20%, -110%) scale(2);
+    -ms-transform: rotate(19deg) translate(-20%, -110%) scale(2);
+    -o-transform: rotate(19deg) translate(-20%, -110%) scale(2);
     transform: rotate(19deg) translate(-20%, -110%) scale(2);
   }
 
