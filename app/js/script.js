@@ -43,14 +43,15 @@ scroll.forEach(anchor => {
   });
 });
 
-
-  const slider = tns({
+const slider = tns({
     container: '.my-slider',
     loop: true,
-    gutter: 20,
     items: 1,
+    gutter: 20,
     slideBy: 'page',
     nav: false,
+    autoplay: true,
+    speed: 400,
     autoplayButtonOutput: false,
     mouseDrag: true,
     lazyload: true,

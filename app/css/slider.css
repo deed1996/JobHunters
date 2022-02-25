@@ -24,12 +24,17 @@
   display: inline-block;
   position: absolute;
   right: -5rem;
-  bottom: 3rem;
+  bottom: 0;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
 }
 
 .controls {
@@ -38,7 +43,6 @@
     list-style: none;
     position: absolute;
     left: 0;
-    background: #333;
     width: 100%;
     top: 50%;
     transform: translatey(-50%);

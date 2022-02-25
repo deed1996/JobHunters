@@ -60,14 +60,22 @@ p {
   font-size: 1.5rem;
 }
 
+footer {
+  background-color: var(--midnightblue);
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  padding: 2.5rem;
+  color: white;
+}
+
+
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 6rem;
   }
-}
 
-footer {
-  background-color: var(--midnightblue);
-  justify-content: space-around;
-  height: 6rem;
+  footer {
+    display: block;
+  }
 }
