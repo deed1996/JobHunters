@@ -11,6 +11,10 @@
   padding: 1.25rem;
 }
 
+.grid_container div {
+  padding-right: 2rem;
+}
+
 .grid_container a, .small_grid_container a {
   color: var(--navyblue);
   text-transform: capitalize;
@@ -33,7 +37,7 @@
   --text-divider-gap: 1rem;
   padding-bottom: 0.5rem;
   color: var(--summersky);
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -48,25 +52,34 @@
   margin-right: var(--text-divider-gap);
 }
 
+article a {
+  color: var(--midnightblue);
+}
+
 .square_blue_overlay {
   width: 12rem;
   height: 12rem;
   background: var(--summersky);
-  opacity: 0.6;
   margin-right: -7.5rem;
   mix-blend-mode: hard-light;
 }
 
 .overlay_1 {
-  transform: rotate(19deg) translate(80%, -145%) scale(2);
+  transform: rotate(19deg) translate(100%, -145%) scale(2);
 }
 
-article a {
-  color: var(--midnightblue);
+.overlay_2{
+  transform: rotate(19deg) translate(-80%, -130%) scale(2);
+  opacity: 0.9;
+}
+
+.overlay_3 {
+  transform: rotate(19deg) translate(0%, -160%) scale(2);
+  opacity: 0.9;
 }
 
 /* Chapter 1 */
-.item2_image {
+.item2_image, .stage_3_image {
   width: 100%;
   padding-right: 5rem;
 }
@@ -130,12 +143,6 @@ article a {
   font-weight: bold;
 }
 
-.overlay_2 {
-  transform: rotate(19deg) translate(-80%, -130%) scale(2);
-  opacity: 0.9;
-  mix-blend-mode: hard-light;
-}
-
 .virtual_interview_grid {
   display: grid;
   grid-template-columns: repeat(3,33%);
@@ -155,10 +162,23 @@ article a {
 }
 
 
+ul li {
+  list-style-type: square;
+  font-style: italic;
+}
+
+ul li::marker {
+  color: var(--summersky);
+}
+
 @media only screen and (max-width: 600px) {
 
   .grid_container, .flex_box_container, .grid_container_stage_2, .virtual_interview_grid {
     display: contents;
+  }
+
+  .grid_container div {
+    padding-right: 0;
   }
 
   .flex_item, .virtual_interview_grid {
@@ -172,14 +192,18 @@ article a {
     transform: rotate(19deg) translate(50%, -135%) scale(2);
   }
 
-  .item2_image, .sticky_notes{
+  .overlay_2 {
+    margin-bottom: -5rem;
+  }
+
+  .overlay_3 {
+    transform: rotate(19deg) translate(-20%, -110%) scale(2);
+  }
+
+  .item2_image, .sticky_notes, .stage_3_image {
     padding-top: 10rem;
     padding-bottom: 1rem;
     padding-right: 0;
-  }
-
-  .overlay_2 {
-    margin-bottom: -5rem;
   }
 
   .virtual_interview_grid_item {

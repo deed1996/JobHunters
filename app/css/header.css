@@ -79,14 +79,14 @@ img.header__logo {
   margin-top: 0;
 }
 
-li {
+ol li {
   font-weight: bold;
   margin-bottom: 1.75rem;
   display: flex;
   align-items: center;
 }
 
-li:before {
+ol li:before {
   content: '';
   counter-increment: li;
   content: counter(li, decimal-leading-zero);
