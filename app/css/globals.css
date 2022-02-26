@@ -15,7 +15,7 @@ body {
 /* Menu links */
 a, a:visited, a:hover {
   text-decoration: none;
-  color: var(--white);
+  color: white;
   text-transform: uppercase;
 }
 
@@ -43,16 +43,26 @@ ul {
 
 h1 {
   text-transform: uppercase;
-  font-size: 9rem;
+  font-size: 7rem;
 }
 
-h2, h3 {
+h2 {
+  font-size: 4.5rem;
   margin-top: 0;
   text-transform: uppercase;
+  color: #0E0B58;
+  font-weight: bolder;
+}
+
+h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #0E0B58;
+  font-weight: bolder;
 }
 
 strong {
-  color: var(--midnightblue);
+  color: #0E0B58;
   font-weight: bolder;
 }
 
@@ -61,19 +71,15 @@ p {
 }
 
 footer {
-  background-color: var(--midnightblue);
+  padding: 2rem;
+  background-color: #0E0B58;
   justify-content: space-between;
   display: flex;
-  width: 100%;
-  padding: 2.5rem;
   color: white;
 }
 
 
 @media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 6rem;
-  }
 
   footer {
     display: block;

@@ -53,7 +53,7 @@ const slider = tns({
     autoplay: true,
     speed: 400,
     autoplayButtonOutput: false,
-    mouseDrag: true,
+    mouseDrag: false,
     lazyload: true,
     controlsContainer: "#customize-controls",
     responsive: {
