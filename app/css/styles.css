@@ -79,6 +79,10 @@ footer {
   color: white;
 }
 
+.underline {
+  text-decoration: underline solid #0E0B58;
+}
+
 @media only screen and (max-width: 600px) {
   footer {
     display: block;
