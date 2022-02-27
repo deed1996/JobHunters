@@ -7,7 +7,6 @@ const anchor = document.querySelector('.text-container');
 const scroll = document.querySelectorAll('a[href^="#"]');
 
 buttonBurger.addEventListener('click', function() {
-
   if (header.classList.contains('open')) { //close burger menu
     header.classList.remove('open');
     fadeElems.forEach(function(element) {
@@ -22,7 +21,6 @@ buttonBurger.addEventListener('click', function() {
     });
   }
 });
-
 
 anchor.addEventListener('click', function() {
   header.classList.remove('open');
@@ -53,7 +51,6 @@ const slider = tns({
     autoplay: true,
     speed: 400,
     autoplayButtonOutput: false,
-    mouseDrag: false,
     lazyload: true,
     controlsContainer: "#customize-controls",
     responsive: {
@@ -66,4 +63,4 @@ const slider = tns({
         }
     }
 
-  });
+});
