@@ -79,11 +79,66 @@ footer {
   color: white;
 }
 
-.underline {
-  text-decoration: underline solid #0E0B58;
+.heading_underline {
+  color: white;
+  display:inline-block;
+  position:relative;
+}
+
+ .heading_underline::after {
+   content:'';
+   left:0;
+   height:3rem;
+   background:#0E0B58;
+   position:absolute;
+   width:70%;
+   bottom:-1rem;
+   z-index: -1;
+ }
+
+.underline, .chapter_underline, .short_underline {
+  color:#0E0B58;
+  display:inline-block;
+  position:relative;
+}
+
+.underline::after {
+  content:'';
+  left:20%;
+  height:1.5rem;
+  background:#45B0FF;
+  position:absolute;
+  width:70%;
+  bottom:-1rem;
+  z-index: -1;
+}
+
+.chapter_underline::after {
+  content:'';
+  left:20%;
+  height:3rem;
+  background:#45B0FF;
+  position:absolute;
+  width:80%;
+  bottom:-1rem;
+  z-index: -1;
+}
+
+.short_underline::after {
+  content:'';
+  left:0;
+  height:1.5rem;
+  background:#45B0FF;
+  position:absolute;
+  width:80%;
+  bottom:-1rem;
+  z-index: -1;
 }
 
 @media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 5.5rem;
+  }
   footer {
     display: block;
   }
@@ -511,6 +566,8 @@ article a {
 /* Chapter 2 */
 .chapter_2 {
   background-color: #FDFAF7;
+  z-index: -2;
+  position: relative;
 }
 
 .stage, .stages a {
@@ -633,6 +690,7 @@ ul li::marker {
 .slider-container {
   overflow: hidden;
   position: relative;
+  padding-top: 2rem;
 }
 
 .my-slider, .slider-item {
