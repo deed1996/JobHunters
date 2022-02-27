@@ -234,7 +234,6 @@ ol li {
 }
 
 ol li:before {
-  content: '';
   counter-increment: li;
   content: counter(li, decimal-leading-zero);
   color: white;
@@ -623,12 +622,12 @@ article a {
 }
 
 
-ul li {
+.note li {
   list-style-type: square;
   font-style: italic;
 }
 
-ul li::marker {
+.note li::marker {
   color: #45B0FF;
 }
 
@@ -690,7 +689,7 @@ ul li::marker {
 .slider-container {
   overflow: hidden;
   position: relative;
-  padding-top: 2rem;
+  padding: 2rem 3rem;
 }
 
 .my-slider, .slider-item {
@@ -725,24 +724,40 @@ ul li::marker {
 .card img {
   width: 100%;
   height: auto;
+  display: inline-block;
+  vertical-align: top;
 }
 
+
 .controls {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    top: 50%;
-    transform: translatey(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 50%;
+  transform: translatey(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls:focus {
+  outline: none;
 }
 
 .controls li:hover {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.next {
+  background-color: #45B0FF;
+  background-image: url(images/rightarrow.svg);
+  border-radius: 100%;
+  height: 48px;
+  padding-left: 44px;
+  padding-top: 5px;
 }
 
 

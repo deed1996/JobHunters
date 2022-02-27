@@ -41,7 +41,8 @@ scroll.forEach(anchor => {
   });
 });
 
-const slider = tns({
+
+  const slider = tns({
     container: '.my-slider',
     loop: true,
     items: 1,
@@ -51,7 +52,7 @@ const slider = tns({
     autoplay: true,
     speed: 400,
     autoplayButtonOutput: false,
-    lazyload: true,
+    mouseDrag: true,
     controlsContainer: "#customize-controls",
     responsive: {
         640: {
@@ -63,4 +64,4 @@ const slider = tns({
         }
     }
 
-});
+  });

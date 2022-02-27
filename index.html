@@ -8,8 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <link rel="stylesheet" href="app/css/styles.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
@@ -25,7 +23,7 @@
     <nav class="flex">
       <a href="#" class="header__logo">
         <picture>
-          <img src="images/jobhunters-logo.svg"  loading="lazy" alt="Job Hunters Logo">
+          <img src="images/jobhunters-logo.svg" loading="lazy" alt="Job Hunters Logo">
         </picture>
       </a>
 
@@ -135,7 +133,7 @@
     <div class="grid_container">
       <div>
         <picture>
-          <img class="item2_image" src="images/woman-laughing-tablet.jpg" loading="lazy"  alt="Women laughing while looking at her tablet">
+          <img class="item2_image" src="images/woman-laughing-tablet.jpg" loading="lazy" alt="Women laughing while looking at her tablet">
         </picture>
         <div class="square_blue_overlay overlay_1"></div>
       </div>
@@ -331,7 +329,7 @@
         <p>If you discussed something in particular during the interview (for example, you told them about a project you worked on which seemed especially relevant), then you might send a link so they can follow it up.</p>
 
         <p>Sending a quick thank you note has several benefits:</p>
-        <ul>
+        <ul class="note">
           <li>
             <p>It makes you more memorable to the interviewer.</p>
           </li>
@@ -364,69 +362,76 @@
     </div>
 
     <div class="slider-container">
-      <div class="my-slider">
 
-        <article class="slider-item">
-          <div class="card">
-            <picture>
-              <img src="images/getting-the-most-from-remote-working.jpg" loading="lazy" alt="Rear view of a woman working on her laptop">
-            </picture>
-            <h3 class="card-title">Getting the most from remote working</h3>
-            <p>EXTERNAL</p>
-          </div>
-        </article>
+      <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+        <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1"></li>
 
-        <article class="slider-item">
-          <div class="card">
-            <picture>
-              <img src="images/the-ultimate-guide-to-working-from-home.jpg" loading="lazy" alt="Close up of a person typing on a computer">
-            </picture>
-            <h3 class="card-title">The ultimate guide to working from home</h3>
-            <p>EXTERNAL</p>
-          </div>
-        </article>
+        <li class="next" data-controls="next" aria-controls="customize"></li>
+      </ul>
 
-        <article class="slider-item">
-          <div class="card">
-            <picture>
-              <img src="images/how-to-find-a-remote-job.jpg" loading="lazy" alt="A woman sitting on her couch working on her laptop">
-            </picture>
-            <h3 class="card-title">How to find (and land!) a remote job that’s right for you</h3>
-            <p>EXTERNAL</p>
-          </div>
-        </article>
+        <div class="my-slider">
 
-        <article class="slider-item">
-          <div class="card">
-            <picture>
-              <img src="images/how-how-to-prepare-for-a-remote-interview.jpg" loading="lazy" alt="Rear view of a person in a virtual meeting">
-            </picture>
-            <h3 class="card-title">How to prepare for a video interview</h3>
-            <p>EXTERNAL</p>
-          </div>
-        </article>
+          <article class="slider-item">
+            <div class="card">
+              <picture>
+                <img src="images/getting-the-most-from-remote-working.jpg" loading="lazy" alt="Rear view of a woman working on her laptop">
+              </picture>
+              <h3 class="card-title">Getting the most from remote working</h3>
+              <p>EXTERNAL</p>
+            </div>
+          </article>
 
-        <article class="slider-item">
-          <div class="card">
-            <picture>
-              <img src="images/setting-yourself-up-for-success.jpg" loading="lazy" alt="Close up of the screen during a virtual meeting">
-            </picture>
-            <h3 class="card-title">Remote Working: Setting yourself and your teams up for success</h3>
-            <p>EXTERNAL</p>
-          </div>
-        </article>
+          <article class="slider-item">
+            <div class="card">
+              <picture>
+                <img src="images/the-ultimate-guide-to-working-from-home.jpg" loading="lazy" alt="Close up of a person typing on a computer">
+              </picture>
+              <h3 class="card-title">The ultimate guide to working from home</h3>
+              <p>EXTERNAL</p>
+            </div>
+          </article>
 
-        <article class="slider-item">
-          <div class="card">
-            <picture>
-              <img src="images/protect-home-workers.jpg"  loading="lazy" alt="A person sitting on their desk working on a laptop">
-            </picture>
-            <h3 class="card-title">Protect home workers</h3>
-            <p>EXTERNAL</p>
-          </div>
-        </article>
+          <article class="slider-item">
+            <div class="card">
+              <picture>
+                <img src="images/how-to-find-a-remote-job.jpg" loading="lazy" alt="A woman sitting on her couch working on her laptop">
+              </picture>
+              <h3 class="card-title">How to find (and land!) a remote job that’s right for you</h3>
+              <p>EXTERNAL</p>
+            </div>
+          </article>
 
-      </div>
+          <article class="slider-item">
+            <div class="card">
+              <picture>
+                <img src="images/how-how-to-prepare-for-a-remote-interview.jpg" loading="lazy" alt="Rear view of a person in a virtual meeting">
+              </picture>
+              <h3 class="card-title">How to prepare for a video interview</h3>
+              <p>EXTERNAL</p>
+            </div>
+          </article>
+
+          <article class="slider-item">
+            <div class="card">
+              <picture>
+                <img src="images/setting-yourself-up-for-success.jpg" loading="lazy" alt="Close up of the screen during a virtual meeting">
+              </picture>
+              <h3 class="card-title">Remote Working: Setting yourself and your teams up for success</h3>
+              <p>EXTERNAL</p>
+            </div>
+          </article>
+
+          <article class="slider-item">
+            <div class="card">
+              <picture>
+                <img src="images/protect-home-workers.jpg" loading="lazy" alt="A person sitting on their desk working on a laptop">
+              </picture>
+              <h3 class="card-title">Protect home workers</h3>
+              <p>EXTERNAL</p>
+            </div>
+          </article>
+
+        </div>
     </div>
   </section>
 
