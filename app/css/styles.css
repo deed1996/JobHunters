@@ -699,7 +699,7 @@ article a {
 .card {
   overflow: hidden;
   position: relative;
-  height: 40rem;
+  height: 35rem;
 }
 
 .card-title {
@@ -730,17 +730,11 @@ article a {
 
 
 .controls {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  list-style-type: none;
+  right:0;
   position: absolute;
-  left: 0;
-  width: 100%;
-  top: 50%;
-  transform: translatey(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  top: 40%;
+  z-index: 2;
 }
 
 .controls:focus {
@@ -753,13 +747,19 @@ article a {
 
 .next {
   background-color: #45B0FF;
-  background-image: url(images/rightarrow.svg);
+  background-image: url(../../images/arrow-right-thin.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 100%;
   height: 48px;
   padding-left: 44px;
-  padding-top: 5px;
 }
 
+@media only screen and (max-width: 600px) {
+  .next {
+    display: none;
+  }
+}
 
 /** Footer */
 #access_top {
