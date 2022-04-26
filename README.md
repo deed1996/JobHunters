@@ -1,6 +1,6 @@
 # BLT-Assignment
 
 
-Landing pagee for the company Job Hunters
+Landing page for the company Job Hunters
 
-https://deed1996.github.io/BLT-Assignment/
+Built using JavaScript, HTML and CSS
