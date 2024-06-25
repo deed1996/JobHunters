@@ -1,4 +1,4 @@
-# BLT-Assignment
+# JobHunters
 
 ## Table of contents
 
@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://deed1996.github.io/BLT-Assignment/)
+- Solution URL: ([https://deed1996.github.io/JobHunters/](https://deed1996.github.io/JobHunters/))
 
 ## My process
 
